@@ -3,6 +3,7 @@
 	"private": true,
 	"workspaces": ["apps/*", "packages/*"],
 	"scripts": {
+		"dev": "pnpm dokploy:dev",
 		"dokploy:setup": "pnpm --filter=dokploy run setup",
 		"dokploy:dev": "pnpm --filter=dokploy run dev",
 		"dokploy:dev:turbopack": "pnpm --filter=dokploy run dev-turbopack",
@@ -30,10 +31,10 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@types/node": "^18.17.0"
 	},
-	"packageManager": "pnpm@9.5.0",
+	"packageManager": "pnpm@8.15.6",
 	"engines": {
-		"node": "^20.9.0",
-		"pnpm": ">=9.5.0"
+		"node": ">=18 || ^20.9.0",
+		"pnpm": ">=8 || >=9.5.0"
 	},
 	"lint-staged": {
 		"*": [
